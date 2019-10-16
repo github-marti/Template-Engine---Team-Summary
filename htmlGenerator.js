@@ -102,14 +102,10 @@ function htmlGenerator (employees) {
 };
 
 function middleSectionGenerator(employees) {
-    let middleHTML = ''
-    for (employee of employees) {
-        let htmlChunk = cardGenerator(employee);
-        middleHTML += htmlChunk;
-    };
-
-    return middleHTML;
-};
+    return employees.map(employee => {
+        return cardGenerator(employee);
+      }).join('\n');
+ };
 
 function cardGenerator(employee) {
     let fourthCategory;
@@ -119,7 +115,7 @@ function cardGenerator(employee) {
             fourthCategory = "Office Number";
             break;
         case "Engineer" :
-            employee.variable = `<a href="www.github.com/${employee.variable}">${employee.variable}</a>`;
+            employee.variable = `<a href="http://www.github.com/${employee.variable}">${employee.variable}</a>`;
             fourthCategory = "GitHub";
             break;
         case "Intern":
