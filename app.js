@@ -7,7 +7,7 @@ const questions = require('./questions');
 const employeeArray = [];
 
 
-
+// initial function that directs users to add a manager
 const init = () => {
     console.log(chalk.yellow('\nWelcome to the Employee Summary CLI!'));
     console.log(chalk.yellow("We're going to ask you some questions about your employees\nand then return an HTML page displaying your team's information."));
@@ -17,6 +17,7 @@ const init = () => {
 };
 
 
+// general add employee function 
 const addEmployee = function(question, role) {
     inquirer.prompt(question)
         .then(function(answer) {
@@ -26,7 +27,8 @@ const addEmployee = function(question, role) {
         });
 };
 
-
+// asks what employee the user would like to add next or ends the process
+// and generates the HTML if user has no more employees to add
 const getNextEmployee = function() {
     inquirer.prompt(questions.next)
         .then(function({employeetype}) {
