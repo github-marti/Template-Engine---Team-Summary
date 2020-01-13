@@ -1,3 +1,4 @@
+// parent html generator function that contains the layout markup
 function htmlGenerator (employees) {
     return `<!DOCTYPE html>
     <html lang="en">
@@ -101,12 +102,14 @@ function htmlGenerator (employees) {
 
 };
 
+// generates as many cards as there are employees in the employee array
 function middleSectionGenerator(employees) {
     return employees.map(employee => {
         return cardGenerator(employee);
       }).join('\n');
  };
 
+ // generates a single card with different parameters based on employee type
 function cardGenerator(employee) {
     let fourthCategory;
 
