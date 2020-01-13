@@ -123,7 +123,7 @@ function cardGenerator(employee) {
             fourthCategory = "School";
             break;
         default :
-            console.log("something went wrong");
+            console.log("something went wrong in cardGenerator");
     }
 
     return `<div class="card">
