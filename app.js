@@ -35,11 +35,10 @@ const addEmployee = function(question, role) {
 const getNextEmployee = function() {
     inquirer.prompt(questions.next)
         .then(function({employeetype}) {
-            let newEmployee = employeetype.toLowerCase();
             switch (employeetype) {
                 case "Engineer":
                 case "Intern":
-                    addEmployee(questions[newEmployee], employeetype);
+                    addEmployee(questions[employeetype.toLowerCase()], employeetype);
                     break;
                 default :
                     console.log(chalk.magenta('\nThanks for using me!\n'));
