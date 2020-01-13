@@ -46,6 +46,7 @@ const getNextEmployee = function() {
         });
 };
 
+// generates final html document with html generated from the htmlGenerator function
 function buildTeam(html) {
     fs.writeFile(__dirname + '/output/team.html', html, 'utf8', function(err) {
         if (err) throw err;
