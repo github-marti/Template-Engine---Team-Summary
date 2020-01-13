@@ -119,7 +119,7 @@ function cardGenerator(employee) {
             employee.variable = `<a href="http://www.github.com/${employee.variable}">${employee.variable}</a>`;
             fourthCategory = "GitHub";
             break;
-        case "Intern":
+        case "Intern" :
             fourthCategory = "School";
             break;
         default :
