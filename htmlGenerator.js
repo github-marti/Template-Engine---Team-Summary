@@ -110,7 +110,6 @@ function middleSectionGenerator(employees) {
  // generates a single card with different parameters based on employee type
 function cardGenerator(employee) {
     let fourthCategory;
-
     switch (employee.role) {
         case "Manager" :
             fourthCategory = "Office Number";
