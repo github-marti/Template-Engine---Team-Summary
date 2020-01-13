@@ -52,10 +52,8 @@ function buildTeam(html) {
     fs.writeFile(__dirname + '/output/team.html', html, 'utf8', function(err) {
         if (err) throw err;
         console.log('file successfully written!');
-    })
-}
-
-
+    });
+};
 
 // start program
 init();
