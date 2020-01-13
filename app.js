@@ -4,6 +4,7 @@ const fs = require('fs');
 const htmlGenerator = require('./htmlGenerator');
 const questions = require('./questions');
 
+// array into which the user's inputted employees will be added
 const employeeArray = [];
 
 
