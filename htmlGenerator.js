@@ -100,7 +100,7 @@ function htmlGenerator (employees) {
 
 };
 
-// generates as many cards as there are employees in the employee array
+// generates as many cards as there are employees in the employee array and joins them
 function middleSectionGenerator(employees) {
     return employees.map(employee => {
         return cardGenerator(employee);
