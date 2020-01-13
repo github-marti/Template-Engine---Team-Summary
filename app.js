@@ -1,6 +1,8 @@
 const inquirer = require('inquirer');
 const chalk = require('chalk');
 const fs = require('fs');
+
+// requiring html generator functions and questions for inquirers
 const htmlGenerator = require('./htmlGenerator');
 const questions = require('./questions');
 
