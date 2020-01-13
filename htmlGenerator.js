@@ -7,8 +7,6 @@ function htmlGenerator (employees) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Team Summary</title>
-        <!-- ref to font awesome -->
-        <script src="https://kit.fontawesome.com/4a3eda80d3.js" crossorigin="anonymous"></script>
         <style>
             * {
                 box-sizing: border-box;
