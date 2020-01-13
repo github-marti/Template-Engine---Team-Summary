@@ -43,7 +43,7 @@ const getNextEmployee = function() {
                     console.log(chalk.magenta('\nThanks for using me!\n'));
                     const html = htmlGenerator(employeeArray);
                     return buildTeam(html);
-            }
+            };
         });
 };
 
