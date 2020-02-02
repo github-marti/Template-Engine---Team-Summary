@@ -64,7 +64,7 @@ const questions = {
             type: "input",
             message: "What's the intern's e-mail address?",
             name: "email",
-            validate: value => /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/.test(value) >= 2 ? true: "Please enter a valid e-mail address."
+            validate: value => /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/.test(value) ? true: "Please enter a valid e-mail address."
         },
         {
             type: "input",
